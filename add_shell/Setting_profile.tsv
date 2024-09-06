@@ -1,0 +1,38 @@
+-e ------ Easy Metagenomics Necessaries ------
+Running settings
+workspace_location=
+input_data=
+threads=30
+parameters_file=
+Data repository
+bmtagger_databases=/public/home/liubd/soft_ware/metaWRAP/BMTAGGER_INDEX/
+kaiju_databases=/public/home/liubd/soft_ware/kaiju/kaiju/kaijudb/
+EggNog_databases=/public/home/liubd/soft_ware/eggNOG/
+add_databases=/public/home/liubd/soft_ware/add_data/
+Read QC section
+quality_control=20
+host_contamination=hg38
+single-read_mode=No
+skip-trimming=No
+skip-bmtagger=No
+more details infomation=read_qc.sh --help
+Taxonomy profile section
+kaiju_method=greedy
+kaiju_min_abundance=0.1
+single_read_mode=No
+expand_virus_mode=No
+more details infomation=taxonomy.sh --help
+Assemble section
+assemble_method=megahit
+single_end_mode=No
+paired_end_mode=No
+more details infomation=assembly.sh --help
+Function anotation section
+diamond_method=sensitive
+diamond_evalue=0.0001
+diamond_escore=60
+feature_select=CARD,VFDB,CAZy,EC,GOs,KEGG_ko
+quantify_method=TPM,NumReads
+biom_fomat=No
+add_relab_format=Yes
+more details infomation=fucntion.sh --help
