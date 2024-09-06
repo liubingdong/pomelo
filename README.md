@@ -1,6 +1,4 @@
-# pomelo
-A easy pipe to perform Metagenomics
+## Promelo: An Efficient and Convenient software for metagenomics
 
-easy
-easy
-easy
+Undercostruction
+
